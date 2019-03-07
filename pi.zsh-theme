@@ -4,7 +4,7 @@ local return_status="%(?:%{$fg_bold[green]%}π:%{$fg_bold[red]%}π)"
 
 local prompt_suffix="%{$fg[magenta]%}❯%{$reset_color%} "
 
-# by ergenekonyigit / lambda-gitster
+# by shashankmehta (https://github.com/shashankmehta)
 function get_pwd(){
   git_root=$PWD
   while [[ $git_root != / && ! -e $git_root/.git ]]; do
